@@ -24,4 +24,4 @@ def rename_files_in_order(directory):
     for i, file in enumerate(files, start=1):
         shutil.move(file, os.path.join(directory, f'{i}.jpg'))  # Change the extension if needed
 
-rename_files_in_order('dataset/zigzag')
+rename_files_in_order('dataset/validation/zigzag')
