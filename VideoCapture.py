@@ -5,9 +5,7 @@ last_print_time = time.time()
 
 def process_image(image):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    # Apply a filter to extract features. Here, we use Sobel filter for edge detection
-    sobelx = cv2.Sobel(image, cv2.CV_64F, 1, 0, ksize=5)  # Sobel Edge Detection on the X axis
-    sobely = cv2.Sobel(image, cv2.CV_64F, 0, 1, ksize=5)  # Sobel Edge Detection on the Y axis
+    
 
     _, thresh = cv2.threshold(image, 200, 255, cv2.THRESH_BINARY)
 
