@@ -1,0 +1,12 @@
+names:
+  - stitch
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: stitch-detection-ncs0n
+  url: https://universe.roboflow.com/object-detection-pattern/stitch-detection-ncs0n/dataset/1
+  version: 1
+  workspace: object-detection-pattern
+test: test/images
+train: train/images
+val: valid/images
